@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" type="text/css">
+    <title>Kraiwit - Portfolio</title>
+    <!-- csutom css -->
+    <link rel="stylesheet" href="custom.css" type="text/css">
+    <link rel="stylesheet" href="navbar.css" type="text/css">
+    <link rel="stylesheet" href="sidenav.css" type="text/css">
+    <link rel="stylesheet" href="bg_video.css" type="text/css">
+    <link rel="stylesheet" href="about.css" type="text/css">
+    <!-- java script -->
+    <script src="sidenav.js"></script>
+    <script src="type_writer.js"></script>
+
+</head>
+
+<body>
+
+    <!-- background video -->
+    <div>
+        <video autoplay loop muted vlas class="fullscreen-bg__video">
+            <source src="video/background/pexels-tony-schnagl-5527786.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom-heigh mt-3">
+        <div class="container-md">
+            <!-- navbar brand-->
+            <a class="navbar-brand ms-lg-10">
+                <span style="color: beige; font-weight: bold;">Kraiwit</span>
+                <span style="color: rgb(0, 0, 0); font-weight: bold;">.</span>
+                <span style="color: rgb(226, 76, 76); font-weight: bold;">Portfolio</span>
+            </a>
+            <!-- Button -->
+            <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Menu-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto text-center ">
+                    <!-- open sidebar -->
+                    <li class="nav-item navbar-menu-font"><a class="nav-link" onclick="openNavAbout()">About</a>
+                    </li>
+                    <li class="nav-item navbar-menu-font"><a class="nav-link" onclick="openNavSkill()">Skill</a>
+                    </li>
+                    <li class="nav-item navbar-menu-font"><a class="nav-link" onclick="openNavContact()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body -->
+
+    <div class="container-md">
+        <div class="center centerbox rounded-3 p-5 text-center" style="color: rgb(126, 126, 126); font-weight: bold;">
+            <h1 class="Main_font" style="font-size: 70px;">Hello ,World</h1>
+            <h3 class=" mt-3" style="display: inline-block;"> Hi I'm
+                <p href="" class="typewrite" style="display: inline-block;" data-period="2000"
+                    data-type='[ " TNI student.", " Newbie coder", " Gamer.", "I a sleep lover." ]'>
+                    <span class="wrap"></span>
+                </p>
+            </h3>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- about page --->
+    <div id="about" class="sidenav">
+        <!-- close button-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavAbout()">&times;</a>
+        <!-- body -->
+        <div class="container-md text-center">
+            <h1 style="color:white; font-weight: bold;">About me</h1>
+            <h2 style="color: rgb(202, 202, 202);">_____________________</h2>
+            <div class="container-md mt-5">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="img_box">
+                            <img src="images/108924016_152642623092055_2836982909561330732_n.jpg" width="400px"
+                                height="400px">
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div align="left">
+                            <h1 class="base_color">Who am i?.....</h1>
+                            <h4 class="read_text_color">Iam a student at Thai-Nichi Institute of Thechnology.</h4>
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <span class="base_color" style="font-size: 20px;">Name : </span>
+                                    <span class="read_text_color" style="font-size: 20px;"> Kraiwit
+                                        Chinchanathavorn</span>
+                                </div>
+                                <div class="col">
+                                    <span class="base_color" style="font-size: 20px;">Email : </span>
+                                    <span class="read_text_color" style="font-size: 20px;"> ch.kraiwit_st@tni.ac.th
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <span class="base_color" style="font-size: 20px;">Age : </span>
+                                    <span class="read_text_color" style="font-size: 20px;"> 21 </span>
+                                </div>
+                                <div class="col">
+                                    <span class="base_color" style="font-size: 20px;">From : </span>
+                                    <span class="read_text_color" style="font-size: 20px;"> Thailand </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Skill page --->
+    <div id="skill" class="sidenav">
+        <!-- close button-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavSkill()">&times;</a>
+        <!-- body -->
+        <div class="container-md">
+            <div class="text-center">
+                <h1 style="color:white">Skill</h1>
+                <h2 style="color: rgb(202, 202, 202);">_____________________</h2>
+            </div>
+            <!-- Progress bar -->
+            <div class="base_color mt-5 sidenav_margin_lr" style="font-size: 20px;">
+
+                <div class="progress ">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <P>C# language</P>
+
+                <div class="progress mt-5">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <P>Java language</P>
+
+                <div class="progress mt-5">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <P>HTML language</P>
+
+                <div class="progress mt-5">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <P>English language</P>
+
+                <div class="progress mt-5">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <P>Japanese language</P>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- contact page --->
+    <div id="contact" class="sidenav">
+        <!-- close button-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavContact()">&times;</a>
+        <!-- body -->
+        <div class="container text-center text-Justify ">
+            <h1 style="color:white">Contact</h1>
+            <h2 style="color: rgb(202, 202, 202);">_____________________</h2>
+            <a href="https://web.facebook.com/kraiwit.chinchanathavorn.90" class="mt-5"><i class="fab fa-facebook fa-7x"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
